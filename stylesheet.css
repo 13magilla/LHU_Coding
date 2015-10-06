@@ -1,0 +1,150 @@
+body {
+    background: #ffffff;
+}
+
+
+* {
+    font-family: serif
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+/*----- START Navigation Style -----*/
+
+.menu-wrap {
+    width:100%;
+    min-width: 36em;
+    height: 4em;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:maroon;
+}
+ 
+.menu {
+    max-width:36em;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    font-size: 110%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:100%;
+    background: maroon;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 35px;
+    display:inline-block;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:crimson;
+}
+
+/*---- Bottom Level ----*/
+
+.sub-menu {
+    width: 160%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: -1;
+    transition: opacity linear 0.15s;
+    border-top: .2em solid #ffffff;
+    background: maroon;
+}
+
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    font-size: 16px;
+}
+
+.sub-menu li a:hover {
+    background:crimson;
+    font-size: 17.5px;
+}
+
+.sub-menu .current-item a {
+    background:crimson;
+    font-size: 16;
+}
+
+/*-- END Navigation Style --*/
+
+/*------ START Header ------*/
+
+#masthead{
+    max-width: 26em;
+    height: 5em;
+    margin: 0px auto;
+}
+
+#header_name {
+    font-family: fantasy;
+    font-size: 5em;
+    color: maroon;
+    text-shadow: -.5px 0 black, 0 0 black, 1px 0 black, 0 -.5px black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 26.2em){
+    #header_name{font-size: 18.9vw;}
+}
+
+@media only screen and (max-width: 681px){
+    
+}
+    
+/*-------- END Header -------*/
+
+/*--- START Sticky Footer ---*/
+
+html, body {
+    height: 100%;
+}
+
+.file_wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.footer, .push_footer {
+    height: 4em;
+}
+
+/*---- END Sticky Footer ----*/
