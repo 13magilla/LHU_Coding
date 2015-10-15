@@ -2,9 +2,15 @@ body {
     background: #ffffff;
 }
 
-
 * {
     font-family: serif
+}
+
+.main_content{
+    width: 100%;
+    min-width: 36em;
+    background-color: #666666;
+    margin-top: 1em;
 }
 
 .clearfix:after {
@@ -19,7 +25,7 @@ body {
     min-width: 36em;
     height: 4em;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:maroon;
+    background:#830300;
 }
  
 .menu {
@@ -49,7 +55,7 @@ body {
     display:inline-block;
     position:relative;
     font-size:100%;
-    background: maroon;
+    background: #830300;
 }
  
 .menu > ul > li > a {
@@ -58,7 +64,7 @@ body {
 }
  
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:crimson;
+    background:#DC143C;
 }
 
 /*---- Bottom Level ----*/
@@ -73,7 +79,7 @@ body {
     opacity: -1;
     transition: opacity linear 0.15s;
     border-top: .2em solid #ffffff;
-    background: maroon;
+    background: #830300;
 }
 
 .menu li:hover .sub-menu {
@@ -93,12 +99,12 @@ body {
 }
 
 .sub-menu li a:hover {
-    background:crimson;
+    background:#DC143C;
     font-size: 17.5px;
 }
 
 .sub-menu .current-item a {
-    background:crimson;
+    background:#DC143C;
     font-size: 16;
 }
 
@@ -113,19 +119,15 @@ body {
 }
 
 #header_name {
-    font-family: fantasy;
+    font-family: serif;
     font-size: 5em;
-    color: maroon;
-    text-shadow: -.5px 0 black, 0 0 black, 1px 0 black, 0 -.5px black;
+    color: #830300;
+    text-shadow: -1px 0 black, 0 0 black, 2px 0 black, 0 -.5px black;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 26.2em){
-    #header_name{font-size: 18.9vw;}
-}
-
-@media only screen and (max-width: 681px){
-    
+@media only screen and (max-width: 30em){
+    #header_name{font-size: 16.5vw;}
 }
     
 /*-------- END Header -------*/
