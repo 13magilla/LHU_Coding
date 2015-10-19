@@ -1,0 +1,30 @@
+﻿  Commit message
+
+	lines 19 and 30 on all html pages have references to the other file pages
+	Everything wittern on the main content div on functionLibrary.html and psuedoLibrary.html
+		~lines 57-76 functionLibrary.html
+		~lines 57-73 pseudoLibrary.html
+
+	CSS Page 
+		~lines 9-14 and 113-219
+
+	I was told to make the upper and lower boxes' width 36em or smaller but since I made changes
+	to the side margins of the box links on lines 137 and 138 one of the layers falls out of position
+	So the upper and lower boxes width's are now 38em
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch Development
+# Your branch is up-to-date with 'origin/Development'.
+#
+# Changes to be committed:
+#	new file:   functionLibrary.html
+#	modified:   index.html
+#	new file:   pseudoLibrary.html
+#	modified:   stylesheet.css
+#	new file:   update10-15-2015.txt
+#
+
+
+
