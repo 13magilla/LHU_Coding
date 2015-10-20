@@ -9,7 +9,6 @@ body {
 .main_content{
     width: 100%;
     min-width: 36em;
-    background-color: #666666;
     margin-top: 1em;
 }
 
@@ -131,6 +130,100 @@ body {
 }
     
 /*-------- END Header -------*/
+
+/*---- Main content wrap---- */
+
+#main_content_wrap{
+    display: table;
+    width: 100%;
+}
+
+/*------ START Sidebar ------*/
+
+#sidebar {
+	border-top: 1px solid #830300;
+	border-right: 1px solid #830300;
+	height: 100%;
+	width: 11em;
+	float: left;
+	margin-right: 1em;
+	padding: 0 0 0 .5em;
+    display: table;
+}
+
+#sidebar_header{
+    background-color: #830300;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar_header h3{
+    margin: 0;
+    padding: .2em 0 .2em .2em;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.sidebar_list_item li{
+    color: #830300;
+    text-shadow: -.1px 0 black, 0 0 black, .1px 0 black, 0 -1px black;
+    list-style: none;
+    margin-bottom: .4em;
+    border-bottom: 1px solid #830300
+}
+/*------- END Sidebar -------*/
+
+/*----- START Post_info -----*/
+
+.post_name{
+    margin: 0 auto .5em auto;
+    color: #830300;
+    text-shadow: -.1px 0 #666666, 0 0 black, .1px 0 black, 0 -.1px black;
+}
+
+#post_wrap{
+    margin-left: 12em;
+    min-width: 28.3em;
+    height: 100%;
+    border: 1px solid #830300;
+    border-radius: .5em;
+}
+
+.post_title{
+    width: 100%;
+    height: 2em;
+    border-bottom: 1px solid #830300;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    background-color: #830300;
+    color: #ffffff;
+    font-family: serif;
+}
+
+.post_title_prof{
+    float: left;   
+}
+
+.post_title_date{
+    float: right;
+    margin-right: .3em;
+}
+
+.post_content {
+    margin: .4em;
+    display: block;
+    padding: 0.5em 1em;
+    border: .2em ridge #A8A8A8;
+    background: #DCDCDC;
+}
+.post_content p{
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    
+}
+
+/*------ END Post_info ------*/
 
 /*--- START Sticky Footer ---*/
 
