@@ -239,11 +239,38 @@ body {
     
 /*-------- END Header -------*/
 
+/*------- START STATUS ------*/
+
+.status_bar{
+    height: 2em;
+    margin-bottom: 1.5em;
+}
+
+#user_name{
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    color: #830300;
+    float: left;
+    margin: .5em 0 .5em 0;
+}
+
+#logout_button{
+    float: right;
+    margin: .5em 0 .5em 0;
+    border-radius: .5em;
+    background-color: #830300;
+    width: 5em;
+    height: 2em;
+    color: #ffffff;
+}
+
+/*-------- END STATUS -------*/
+
 /*---- Main content wrap---- */
 
 #main_content_wrap{
     display: table;
     width: 100%;
+    margin: 0;
 }
 
 /*------ START Sidebar ------*/
@@ -283,10 +310,21 @@ body {
 
 /*----- START Post_info -----*/
 
-.post_name{
+.title_name{
     margin: 0 auto .5em auto;
     color: #830300;
     text-shadow: -.1px 0 #666666, 0 0 black, .1px 0 black, 0 -.1px black;
+}
+
+#edit_button{
+    float: right;
+    position: relative;
+    bottom: 3.5em;
+    border-radius: .5em;
+    background-color: #830300;
+    width: 5em;
+    height: 2em;
+    color: #ffffff;
 }
 
 #post_wrap{
@@ -301,8 +339,8 @@ body {
     width: 100%;
     height: 2em;
     border-bottom: 1px solid #830300;
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
     background-color: #830300;
     color: #ffffff;
     font-family: serif;
@@ -314,7 +352,7 @@ body {
 
 .post_title_date{
     float: right;
-    margin-right: .3em;
+    margin-right: -3.6em;    
 }
 
 .post_content {
@@ -332,6 +370,44 @@ body {
 }
 
 /*------ END Post_info ------*/
+
+/*---- START comment_info ---*/
+
+#comment{
+    margin: 2em 0 0 12em;
+    color: #830300;
+    border-bottom: 1px dashed #000000;
+    font-family: serif;
+}
+
+#comment_wrap{
+    margin-top: 1em;
+    margin-left: 12em;
+    min-width: 28.3em;
+    height: 100%;
+    border: 1px solid #830300;
+    border-radius: .5em;
+}
+
+.comment_title_prof{
+    float: left;
+    margin-left: .5em;
+}
+
+.comment_title_date{
+    float: right;
+    margin-right: .5em;
+}
+
+.comment_content {
+    margin: .4em;
+    display: block;
+    padding: 0.5em 1em;
+    border: .2em ridge #F4A460;
+    background: #D2B48C;
+}
+
+/*----- END comment_info ----*/
 
 /*--- START Sticky Footer ---*/
 
