@@ -2,21 +2,22 @@
 <html>
 <head>
 <title>LHU Coding</title>
-<link rel="stylesheet" href="\..\stylesheet.css">
- 
+<link rel="stylesheet" href="../stylesheet.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js\subcat.js"></script>
 </head>
 <body>
     <div class="file_wrapper">
     <header id="masthead">
             <div>
-                <a href="index.html" id="header_name">LHU_Coding</a>
+                <a href="" id="header_name">LHU_Coding</a>
             </div>
     </header>
     <!-- start navigation bar-->
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="functionLibrary.html">Function</br>Library</a>
+                <li><a href="#">Function</br>Library</a>
                     <ul class="sub-menu">
                         <li><a href="#">C</a></li>
                         <li><a href="#">C++</a></li>
@@ -27,7 +28,7 @@
                         <li><a href="#">Php</a></li>
                     </ul>
                 </li>
-                <li><a href="pseudoLibrary.html">Pseudo</br>Library</a>
+                <li><a href="#">Pseudo</br>Library</a>
                     <ul class="sub-menu">
                         <li><a href="#">Algorithms</a></li>
                         <li><a href="#">Data Structures</a></li>
@@ -51,29 +52,59 @@
             </ul>
         </nav>
     </div>
-    <!-- end navigation bar-->
+    <!---- end navigation bar ---->
+
+    <!----- Start status bar ----->
+
+    <div class="status_bar">
+        <p id="user_name">LastName, Firstname</p>
+        <button id="logout_button">Logout</button>
+    </div>
+        
+
+    <!----- Start status bar ----->
+
     <!-- main content goes here -->
     <div class="main_content">
-        <!-- Start Content Title -->
-        <div class = main_cat_title>
-			<h1>Function Library</h1>
-		</div>
-		<!-- Start Content Title -->
-		<!-- Start Upper Layer -->
-			<div class = upper_boxes>
-				<div class = box_link1><a href="#"><p class = "function_text">Java</p></a></div>
-				<div class = box_link2><a href="#"><p class = "function_text">C</p></a></div>
-				<div class = box_link3><a href="#"><p class = "function_text">C++</p></a></div>
-			</div>
-			<!-- END Upper Layer -->
-			<!-- Start Lower Layer -->
-			<div class = lower_boxes>
-				<div class = box_link4><a href="#"><p class = "function_text">HTML</p></a></div>
-				<div class = box_link5><a href="#"><p class = "function_text">CSS</p></a></div>
-				<div class = box_link6><a href="#"><p class = "function_text">JavaScript</p></a></div>
-				<div class = box_link7><a href="#"><p class = "function_text">PHP</p></a></div>
-			</div>
-			<!-- END Lower Layer -->
+        
+        <div id="main_content_wrap">
+            <div id="sidebar">
+                <div id="sidebar_header">
+                     <h3>The Sidebar</h3>
+                </div> 
+                <div class="sidebar_list">
+                    <ul class="sidebar_list_item">
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="title">
+                <h1 class="title_name">Title</h1>
+                <button id="edit_button">Edit</button>
+                
+            </div>
+            <div id="post_wrap">
+                <div class="post_title">
+                    <p class="post_title_prof"> Professor</p>
+                    <p class="post_title_date"> Post Date</p>
+                </div>
+                <div class="post_content">
+                    <p>This is what the code will look like when it is inserted into the page.</p>
+                </div>
+            </div>
+            <div id="comment">
+                <h3 id="comment_name"> Comments</h3>
+            </div>
+            <div id="comment_wrap">
+                <div class="post_title">
+                    <p class="comment_title_prof"> User</p>
+                    <p class="comment_title_date"> Comment Date</p>
+                </div>
+                <div class="comment_content">
+                    <p>This </p>
+                </div>
+            </div>
+        </div>
         
     </div>
     <!-- main content ends here -->
