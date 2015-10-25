@@ -85,8 +85,6 @@ function buildSubCat(json) {
     title.text(json.entry.title);
     profName.text(json.entry.prof);
     entryDate.text(json.entry.date);
-    
-    // TODO: create content text formatter
     entryContent.text(json.entry.content);
     
     // wipe previous comments
@@ -112,6 +110,7 @@ function buildSubCat(json) {
         
         // create comment content container and add json text
         var commentContent = $("<div></div>").addClass("comment_content");
+        commentContent.append($("<p></p>").text(json.comments[i].content));
         
         // add title div and comment content to wrapper div
         commentsWrapper.append(titleDiv);
