@@ -1,0 +1,90 @@
+/*-------- START Main Cat Title -------*/
+
+.main_cat_title {
+	font-family: fantasy;
+    font-size: 1.2em;
+    color: #830300;
+	margin: 0px auto;
+	text-align: center;
+	
+}
+
+/*-------- END Main Cat Title -----------*/
+
+/*-------- START Box Links --------*/
+
+/* the box links itself */
+.main_content a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #830300;
+    width: 100px;
+	height: 100px;
+    text-align: center;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+    padding: 4px;
+	border-radius: 25px;
+    text-decoration: none;
+	float: left;
+}
+/* text of the box links */
+.function_text{
+	margin-top: 40%;
+} 
+
+/* upper layer that holds boxes 1-3 on function library */
+.upper_boxes{
+	width: 38em;
+	height: 6.8em;
+	margin: auto;
+	display: block;
+}
+
+/* lower layer that holds boxes 4-7 in fuction library */
+.lower_boxes {
+	margin: auto;
+	margin-top: 1em;
+	width: 38em;
+	display: block;
+}
+
+/* Java box link */
+.box_link1{
+	margin-left:25%;
+
+}
+
+/* C box link */
+.box_link2{
+	margin-left:45%;
+	
+}
+
+/* C++ box link */
+.box_link3{
+	margin-left:65%;
+}
+
+/* HTML box link */
+.box_link4{
+	margin-left:15%;
+}
+
+/* CSS box link */
+.box_link5{
+	margin-left:35%;
+}
+
+/* JavaScript box link */
+.box_link6{
+	margin-left:55%;
+}
+
+/* PHP box link */
+.box_link7{
+	margin-left:75%;
+}
+
+/*-------- END Box Links ----------*/

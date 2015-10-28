@@ -1,0 +1,72 @@
+/*-------- START Main Cat Title -------*/
+
+.main_cat_title {
+	font-family: fantasy;
+    font-size: 1.2em;
+    color: #830300;
+	margin: 0px auto;
+	text-align: center;
+	
+}
+
+/*-------- END Main Cat Title -----------*/
+
+/*-------- START Box Links --------*/
+
+/* the box links itself */
+.main_content a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #830300;
+    width: 100px;
+	height: 100px;
+    text-align: center;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+    padding: 4px;
+	border-radius: 25px;
+    text-decoration: none;
+	float: left;
+}
+
+/* text of the box links */
+.function_text{
+	margin-top: 40%;
+} 
+
+/* upper layer that holds boxes 8 & 9 on pseudo library */
+.upper_boxes{
+	width: 38em;
+	height: 6.8em;
+	margin: auto;
+	display: block;
+}
+
+/* lower layer that holds boxes 4-7 in fuction library and boxes 10 & 11 in pseudo library */
+.lower_boxes {
+	margin: auto;
+	margin-top: 1em;
+	width: 38em;
+	display: block;
+}
+
+/* Data Structures box link */
+.box_link8{
+	margin-left:35%;
+}
+
+/* Algorithms box link */
+.box_link9{
+	margin-left:55%;
+}
+
+/* Design Patterns box link  */
+.box_link10{
+	margin-left:35%;
+}
+
+/* Math formulas box link */
+.box_link11{
+	margin-left:55%;
+}

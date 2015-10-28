@@ -1,20 +1,20 @@
 $(document).ready(function() {
     
     // TODO This function will connect to the backend to get JSON data
-    /*var jqxhr = $.post( "php/home.php", null, 'json');
+    /*var jqxhr = $.post( "php/subCat.php", null, 'json');
     jqxhr.done(buildNewsFeed);
     jqxhr.fail(function {
                
     });*/
     
-    // TEST DATA
+    /* TEST DATA */
     var json = [];
     json.entry = [];
     json.sidebar = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
     json.comments = [[], [], []];
     
     json.entry.title = "Merge Sort";
-    json.entry.prof = "Dr. Sues";
+    json.entry.user = "Dr. Sues";
     json.entry.date = "1/1/2015";
     json.entry.content = "// Merge sort ";
     
@@ -62,8 +62,17 @@ $(document).ready(function() {
     buildSubCat(json);
 
 });
-
+/*
+*   buildSubCat(json)
+*   @params: 
+*   json - java script object notation that contains the subcategory page information
+*
+*   @description:
+*   this function will build the subcategories view dynamically from the json data
+*/
 function buildSubCat(json) {
+    
+    // TODO: attach on click function to each sidebar entry which will request the entry info and build the view
     
     // wipe sidebar list
     var sidebar = $(".sidebar_list_item").empty();
@@ -77,13 +86,13 @@ function buildSubCat(json) {
     
     // wipe previous entry info
     var title = $(".title_name").text("");
-    var profName = $(".post_title_prof").text(""); 
+    var userName = $(".post_title_prof").text(""); 
     var entryDate = $(".post_title_date").text("")
     var entryContent = $(".post_content").text("");
     
     // build current entry info
     title.text(json.entry.title);
-    profName.text(json.entry.prof);
+    userName.text(json.entry.user);
     entryDate.text(json.entry.date);
     entryContent.text(json.entry.content);
     

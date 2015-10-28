@@ -7,7 +7,7 @@ $(document).ready(function() {
                
     });*/
     
-    // TEST DATA
+    /* TEST DATA */
     var json = [[],[], []];
     json[0].postedBy = "Test Prof";
     json[0].date = "9/11/2001";
@@ -32,10 +32,18 @@ $(document).ready(function() {
     json[2].section = "Pseudo Library";
     json[2].category = "Sorting Algorithms";
     json[2].comment = "Better sort thank wacky sort";
+    
     buildNewsFeed(json);
 
 });
-
+/*
+*   buildNewsFeed(json)
+*   @params: 
+*   json - java script object notation that contains the newfeed information
+*
+*   @description:
+*   this function will build the newsfeed dynamically from the json data
+*/
 function buildNewsFeed(json) {
     
     // for each newsfeedItem in the json create a newsfeedItem on the page
@@ -76,6 +84,7 @@ function buildNewsFeed(json) {
         
         // append newsFeedSubWrapperText to newsFeedSubWrapper div
         newsFeedSubWrapper.append(newsFeedSubWrapperText);
+        
         // append newsFeedSubWrapperComment to newsFeedSubWrapper div
         newsFeedSubWrapper.append(newsFeedSubWrapperComment);
         
